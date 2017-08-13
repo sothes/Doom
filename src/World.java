@@ -6,7 +6,11 @@ public class World
 	
 	World(){
 		Field = new GameField();
-		Canvas=Field.convert2D();
+		//Canvas=Field.convert2D();
+	}
+	
+	private void draw(){
+		System.out.println(Field.toString());
 	}
 	
 }

@@ -1,4 +1,5 @@
-public class GameField
+
+import java.util.*;public class GameField
 {
 	private String Field;
 	public GameTile[][] Level;
@@ -43,12 +44,12 @@ public class GameField
 		}
 		return s;
 	}
-	String convert2D(){
-		String s="";
+	ArrayList convert2D(){
+		ArrayList s= new ArrayList();
 		for(int i=0;i<5;i++){
-			s=s+" ";
+			s.add(" ");
 			for(int a=0;a<10;a++){
-				s=s+Level[i][a].toString();
+				s.add(Level[i][a].toString());
 			}
 		}
 		return s;
